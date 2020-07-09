@@ -52,11 +52,11 @@ $newClass = (new className)->methodName();
 
 ## Method Summary
 
-file_get_contents() - Reads entire file into a string
+`file_get_contents()` - Reads entire file into a string
 
-ksort() - Sort an array by key
+`ksort()` - Sort an array by key
 
-date_format() - Returns date formatted according to given format
+`date_format()` - Returns date formatted according to given format
 
 ## Method Detail
 
