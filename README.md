@@ -52,11 +52,11 @@ $newClass = (new className)->methodName();
 
 ## Method Summary
 
-`file_get_contents()` - Reads entire file into a string
+file_get_contents() - Reads entire file into a string
 
-`ksort()` - Sort an array by key
+ksort() - Sort an array by key
 
-`date_format()` - Returns date formatted according to given format
+date_format() - Returns date formatted according to given format
 
 ## Method Detail
 
@@ -90,3 +90,17 @@ Sort an array by key
 `array`: The input array.
 
 `sort_flags`: You may modify the behavior of the sort using the optional parameter  `sort_flags`, for details see  [sort()](https://www.php.net/manual/en/function.sort.php).
+
+### date_format()
+
+```php
+date_format($object, $format) : string
+```
+
+ Returns date formatted according to given format
+
+#### Parameters:
+
+`object`: Procedural style only: A  [DateTime](https://www.php.net/manual/en/class.datetime.php)  object returned by  [date_create()](https://www.php.net/manual/en/function.date-create.php)
+
+`format`: Format accepted by  [date()](https://www.php.net/manual/en/function.date.php).
