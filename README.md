@@ -1,4 +1,4 @@
-##### [file_get_contents()](https://github.com/jamemarkdinhtuan/calenderlib/blob/master/README.md#file_get_contents())
+
 # Calendar Lib [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 Calendar Lib to get and check the holidays in Japan.
 ## Describe
@@ -58,12 +58,3 @@ ksort() - Sort an array by key
 
 date_format() - Returns date formatted according to given format
 
-
-
-
-
-
-
-
-
-### file_get_contents()
