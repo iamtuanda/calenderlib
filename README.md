@@ -1,8 +1,17 @@
 
-# Calendar Lib
-
+# Calendar Lib [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 Calendar Lib to get and check the holidays in Japan.
-
+## Describe
+```
+function getHolidays()
+```
+- Get the holiday from the url as a JSON file and return an array containing the holidays.
+```
+function checkHoliday($ymd_date)
+```
+- Check if a day is a holiday or not, if it is a holiday, it will return a non-holiday day and vice versa return it.
+-  Input param:
+$ymd_date: Any day of the year.
 ## How to use
 
 To use this library, you must first call the **namespace**. There are two ways to declare:
@@ -40,3 +49,4 @@ $newClass->methodName;
 //or
 $newClass = (new className)->methodName();
 ```
+
