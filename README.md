@@ -66,4 +66,4 @@ date_format() - Returns date formatted according to given format
 
 
 
-###file_get_contents(
+### file_get_contents()
