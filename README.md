@@ -52,9 +52,41 @@ $newClass = (new className)->methodName();
 
 ## Method Summary
 
-file_get_contents() - Reads entire file into a string
+`file_get_contents()` - Reads entire file into a string
 
-ksort() - Sort an array by key
+`ksort()` - Sort an array by key
 
-date_format() - Returns date formatted according to given format
+`date_format()` - Returns date formatted according to given format
 
+## Method Detail
+
+### file_get_contents()
+```php
+file_get_contents(string $filename [, bool $use_include_path = FALSE [, resource $context[, int $offset = 0 [, int $maxlen ]]]]) : string
+```
+Reads entire file into a string
+
+#### Parameters:
+`filename`: Name of the file to read.
+
+`use_include_path`: The **`FILE_USE_INCLUDE_PATH`** constant can be used to trigger [include path](https://www.php.net/manual/en/ini.core.php#ini.include-path) search. This is not possible if [strict typing](https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict) is enabled, since **`FILE_USE_INCLUDE_PATH`** is an [int](https://www.php.net/manual/en/language.types.integer.php). Use **`TRUE`** instead.
+
+`context`: A valid context resource created with  [stream_context_create()](https://www.php.net/manual/en/function.stream-context-create.php). If you don't need to use a custom context, you can skip this parameter by  **`NULL`**.
+
+`offset`:  The offset where the reading starts on the original stream. Negative offsets count from the end of the stream. Seeking (`offset`) is not supported with remote files. Attempting to seek on non-local files may work with small offsets, but this is unpredictable because it works on the buffered stream.
+
+`maxlen`: Maximum length of data read. The default is to read until end of file is reached. Note that this parameter is applied to the stream processed by the filters.
+
+### ksort()
+
+```php
+ksort (array &$array [, int $sort_flags = SORT_REGULAR ]) : bool
+```
+
+Sort an array by key
+
+#### Parameters:
+
+`array`: The input array.
+
+`sort_flags`: You may modify the behavior of the sort using the optional parameter  `sort_flags`, for details see  [sort()](https://www.php.net/manual/en/function.sort.php).
