@@ -2,16 +2,15 @@
 # Calendar Lib [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 Calendar Lib to get and check the holidays in Japan.
 ## Describe
-```php
+```
 function getHolidays()
 ```
 - Get the holiday from the url as a JSON file and return an array containing the holidays.
-```php
+```
 function checkHoliday($ymd_date)
 ```
 - Check if a day is a holiday or not, if it is a holiday, it will return a non-holiday day and vice versa return it.
 -  Input param:
-
 $ymd_date: Any day of the year.
 ## How to use
 
@@ -51,3 +50,20 @@ $newClass->methodName;
 $newClass = (new className)->methodName();
 ```
 
+## Method Summary
+
+file_get_contents() - Reads entire file into a string
+
+ksort() - Sort an array by key
+
+date_format() - Returns date formatted according to given format
+
+##### [file_get_contents()](https://github.com/jamemarkdinhtuan/calenderlib/blob/master/README.md#file_get_contents())
+
+
+
+
+
+
+
+###file_get_contents(
