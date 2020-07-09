@@ -37,4 +37,6 @@ For method calls while outside the class, you just need to use the following syn
 ```php
 $newClass = new className();
 $newClass->methodName;
+//or
+$newClass = (new className)->methodName();
 ```
