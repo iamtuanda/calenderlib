@@ -16,4 +16,4 @@ use My\Full\Classname
 ```
 new namespaceName\className();
 ```
-
+The namespace load declaration must also be placed on top of a file, if in a file the namespace and use are used, the use will be placed under the namespace
