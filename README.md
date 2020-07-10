@@ -1,8 +1,8 @@
-
-
 # Calendar Lib [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 Calendar Lib to get and check the holidays in Japan.
+
 ## Describe
+
 ```
 function getHolidays()
 ```
@@ -34,6 +34,7 @@ The **namespace** load declaration must also be placed on top of a file, if in a
 Access method of class:
 
 * Access in class
+
 To access the methods of the class while we are still in the class, we use the following syntax:
 
 ```php
@@ -44,6 +45,7 @@ $this->methodName(argument);
 ```
 
 * Accessed outside the class
+
 For method calls while outside the class, you just need to use the following syntax:
 
 ```php
@@ -64,12 +66,14 @@ $newClass = (new className)->methodName();
 ## Method Detail
 
 ### file_get_contents()
+
 ```php
 file_get_contents(string $filename [, bool $use_include_path = FALSE [, resource $context[, int $offset = 0 [, int $maxlen ]]]]) : string
 ```
 Reads entire file into a string
 
 #### Parameters
+
 `filename`: Name of the file to read.
 
 `use_include_path`: The **`FILE_USE_INCLUDE_PATH`** constant can be used to trigger [include path](https://www.php.net/manual/en/ini.core.php#ini.include-path) search. This is not possible if [strict typing](https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict) is enabled, since **`FILE_USE_INCLUDE_PATH`** is an [int](https://www.php.net/manual/en/language.types.integer.php). Use **`TRUE`** instead.
@@ -139,7 +143,9 @@ date_format($object, $format) : string
 `format`: Format accepted by  [date()](https://www.php.net/manual/en/function.date.php).
 
 #### examples
+
 Object oriented style:
+
 ```php
 <?php  
 $date = new DateTime('2020-07-10');  
