@@ -32,6 +32,7 @@ The **namespace** load declaration must also be placed on top of a file, if in a
 Access method of class:
 
 * Access in class
+
 To access the methods of the class while we are still in the class, we use the following syntax:
 
 ```php
@@ -42,6 +43,7 @@ $this->methodName(argument);
 ```
 
 * Accessed outside the class
+
 For method calls while outside the class, you just need to use the following syntax:
 
 ```php
