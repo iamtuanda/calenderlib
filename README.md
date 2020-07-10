@@ -162,8 +162,11 @@ Takes a JSON encoded string and converts it into a PHP variable.
 #### Parameters
 
 `string`: Required. Specifies the value to be encoded.
+
 `assoc`: Optional. Specifies a Boolean value. When set to **true**, the returned object will be converted into an associative **array**. When set to **false**, it returns an **object**. **False** is default.
+
 `depth`: Optional. Specifies the recursion depth. Default recursion depth is 512.
+
 `options`: Optional. Specifies a bitmask (**JSON_BIGINT_AS_STRING**, **JSON_INVALID_UTF8_IGNORE**, J**SON_INVALID_UTF8_SUBSTITUTE**,  **JSON_OBJECT_AS_ARRAY**, **JSON_THROW_ON_ERROR**)
 
 #### examples
