@@ -11,9 +11,8 @@ function checkHoliday($ymd_date)
 ```
 - Check if a day is a holiday or not, if it is a holiday, it will return a non-holiday day and vice versa return it.
 -  Input param:
-$ymd_date: 
 
-Any day of the year.
+$ymd_date: Any day of the year.
 
 ## How to use
 
