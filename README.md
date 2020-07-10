@@ -1,4 +1,5 @@
 
+
 # Calendar Lib [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 Calendar Lib to get and check the holidays in Japan.
 ## Describe
@@ -68,7 +69,7 @@ file_get_contents(string $filename [, bool $use_include_path = FALSE [, resource
 ```
 Reads entire file into a string
 
-#### Parameters:
+#### Parameters
 `filename`: Name of the file to read.
 
 `use_include_path`: The **`FILE_USE_INCLUDE_PATH`** constant can be used to trigger [include path](https://www.php.net/manual/en/ini.core.php#ini.include-path) search. This is not possible if [strict typing](https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict) is enabled, since **`FILE_USE_INCLUDE_PATH`** is an [int](https://www.php.net/manual/en/language.types.integer.php). Use **`TRUE`** instead.
@@ -79,6 +80,17 @@ Reads entire file into a string
 
 `maxlen`: Maximum length of data read. The default is to read until end of file is reached. Note that this parameter is applied to the stream processed by the filters.
 
+#### examples
+
+Get and output the source of the homepage of a website:
+
+```php
+<?php  
+$homepage = file_get_contents('http://www.testtest.com/');  
+echo $homepage;  
+?>
+```
+
 ### ksort()
 
 ```php
@@ -87,11 +99,30 @@ ksort (array &$array [, int $sort_flags = SORT_REGULAR ]) : bool
 
 Sort an array by key
 
-#### Parameters:
+#### Parameters
 
 `array`: The input array.
 
 `sort_flags`: You may modify the behavior of the sort using the optional parameter  `sort_flags`, for details see  [sort()](https://www.php.net/manual/en/function.sort.php).
+
+#### examples
+
+```php
+<?php  
+$subject = array("php"=>"1", "css"=>"2", "js"=>"3", "html"=>"4");  
+ksort($subject);  
+foreach ($subject as $key => $val) {  
+echo "$key = $val\n";  
+}  
+?>
+```
+The above example will output:
+```
+css = 2
+html = 4
+js = 3
+php = 1
+```
 
 ### date_format()
 
@@ -101,8 +132,17 @@ date_format($object, $format) : string
 
  Returns date formatted according to given format
 
-#### Parameters:
+#### Parameters
 
 `object`: Procedural style only: A  [DateTime](https://www.php.net/manual/en/class.datetime.php)  object returned by  [date_create()](https://www.php.net/manual/en/function.date-create.php)
 
 `format`: Format accepted by  [date()](https://www.php.net/manual/en/function.date.php).
+
+#### examples
+Object oriented style:
+```php
+<?php  
+$date = new DateTime('2020-07-10');  
+echo $date->format('Y-m-d H:i:s');  
+?>
+```
