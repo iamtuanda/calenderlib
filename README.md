@@ -1,8 +1,6 @@
 # Calendar Lib [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 Calendar Lib to get and check the holidays in Japan.
-
 ## Describe
-
 ```
 function getHolidays()
 ```
@@ -34,7 +32,6 @@ The **namespace** load declaration must also be placed on top of a file, if in a
 Access method of class:
 
 * Access in class
-
 To access the methods of the class while we are still in the class, we use the following syntax:
 
 ```php
@@ -45,7 +42,6 @@ $this->methodName(argument);
 ```
 
 * Accessed outside the class
-
 For method calls while outside the class, you just need to use the following syntax:
 
 ```php
@@ -63,17 +59,17 @@ $newClass = (new className)->methodName();
 
 `date_format()` - Returns date formatted according to given format
 
+`json_decode()` - Decodes a JSON string
+
 ## Method Detail
 
 ### file_get_contents()
-
 ```php
 file_get_contents(string $filename [, bool $use_include_path = FALSE [, resource $context[, int $offset = 0 [, int $maxlen ]]]]) : string
 ```
 Reads entire file into a string
 
 #### Parameters
-
 `filename`: Name of the file to read.
 
 `use_include_path`: The **`FILE_USE_INCLUDE_PATH`** constant can be used to trigger [include path](https://www.php.net/manual/en/ini.core.php#ini.include-path) search. This is not possible if [strict typing](https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict) is enabled, since **`FILE_USE_INCLUDE_PATH`** is an [int](https://www.php.net/manual/en/language.types.integer.php). Use **`TRUE`** instead.
@@ -151,4 +147,43 @@ Object oriented style:
 $date = new DateTime('2020-07-10');  
 echo $date->format('Y-m-d H:i:s');  
 ?>
+```
+
+### json_decode()
+
+```php
+json_decode(string, assoc, depth, options)
+```
+
+Takes a JSON encoded string and converts it into a PHP variable.
+
+#### Parameters
+
+`string`: Required. Specifies the value to be encoded.
+`assoc`: Optional. Specifies a Boolean value. When set to **true**, the returned object will be converted into an associative **array**. When set to **false**, it returns an **object**. **False** is default.
+`depth`: Optional. Specifies the recursion depth. Default recursion depth is 512.
+`options`: Optional. Specifies a bitmask (**JSON_BIGINT_AS_STRING**, **JSON_INVALID_UTF8_IGNORE**, J**SON_INVALID_UTF8_SUBSTITUTE**,  **JSON_OBJECT_AS_ARRAY**, **JSON_THROW_ON_ERROR**)
+
+#### examples
+
+Store JSON data in a PHP variable, and then decode it into a PHP associative array:
+
+```php
+<?php  
+$jsonobj = '{"tuan":23,"huy":24,"nam":28}';  
+var_dump(json_decode($jsonobj, true));  
+?>
+```
+
+The above example will output:
+
+```php
+array(3) {
+  ["tuan"]=>
+  int(23)
+  ["huy"]=>
+  int(24)
+  ["nam"]=>
+  int(28)
+}
 ```
