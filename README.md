@@ -1,4 +1,4 @@
-# Calendar Lib [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+# Calendar Lib
 Calendar Lib to get and check the holidays in Japan.
 ## Describe
 ```
