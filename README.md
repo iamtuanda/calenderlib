@@ -1,5 +1,5 @@
 # Calendar Lib
-Calendar Lib to get and check the holidays in Japan.
+Calendar Libss to get and check the holidays in Japan.
 ## Describe
 ```
 function getHolidays()
